@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>first_sem_cse</title>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Yatra One' rel='stylesheet'>
+<style type="text/css">
+	.btn:hover
+	{
+        font-weight: bold;
+        font-size: 10 px;
+	}
+</style>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="jumbotron">
+		<h3 style="color: violet;">CHEK IT NOW....(FOURTH SEMESTER)!!!!</h3>
+    <a href="branch_select.html">
+		<button type="button" class="btn btn-default" style="background-color: white;">HOME</button></a>
+	</div>
+	
+</div>
+<hr>
+<form class="form-inline">
+  <div class="form-group">
+   <label> 1.Data Structure and Algorithm: </label>
+    <input type="number" class="form-control" id="3cs103" required>
+  </div>
+  <div class="form-group">
+    <label>2.Object Oriented Methodology:</label>
+    <input type="number" class="form-control" id="3cs105" required>
+  </div>
+   <div class="form-group">
+   <label> 3.Digital Logic and Circuit: </label>
+    <input type="number" class="form-control" id="3ec103" required>
+  </div>
+
+<hr>
+
+  <div class="form-group">
+    <label>4.Material Science and Technology:</label>
+    <input type="number" class="form-control" id="3ph103" required>
+  </div>
+ <div class="form-group">
+   <label>5.Discrerete Mathematical Structure:</label>
+    <input type="number" class="form-control" id="3ma106" required>
+  </div>
+  <div class="form-group">
+    <label>6.Bio Science::</label>
+    <input type="number" class="form-control" id="3ch105" required>
+  </div>
+
+  
+  <hr>
+
+   <div class="form-group">
+   <label>7.Programming Lab:</label>
+    <input type="number" class="form-control" id="3cs106" required>
+  </div>
+  <div class="form-group">
+    <label>8.Digital Logic and Circuit Lab:</label>
+    <input type="number" class="form-control" id="3ec104" required>
+  </div>
+
+  <!--<button onclick="myFunction()" class="btn btn-default">GetMyResult</button>-->
+</form>
+<button onclick="myFunction()" style="margin-left: 300px; margin-top: 100px;" class="btn btn-default">GetMyResult</button>
+<button onclick="myTotal()" style="margin-left: 300px; margin-top: 100px;" class="btn btn-default">GetMyFullMark</button>
+<button onclick="myPercentage()" style="margin-left: 300px; margin-top: 100px;" class="btn btn-default">GetMyPercentage</button>
+<hr>
+<div id=""><h2>Your Pointer Here:</h2>
+  <div class="container">
+<div id="result" style="font-weight: bold; color: red; font-size: 30px;">
+  
+</div>
+
+</div>
+</div>
+<hr>
+<div id=""><h2>Your Full Marks Here:</h2>
+  <div class="container">
+<div id="total" style="font-weight: bold; color: red; font-size: 30px;">
+  
+</div>
+
+</div>
+</div>
+
+<hr>
+<div id=""><h2>Your Percentage Here:</h2>
+  <div class="container">
+<div id="percentage" style="font-weight: bold; color: red; font-size: 30px;">
+  
+</div>
+
+</div>
+</div>
+
+<script type="text/javascript">
+	function myFunction() {
+      var a=document.getElementById("3cs103").value;
+      var b=document.getElementById("3cs105").value;
+           var c=document.getElementById("3ec103").value;
+      var d =document.getElementById("3ph103").value;
+           var e=document.getElementById("3ma106").value;
+      var f=document.getElementById("3ch105").value;
+           var g=document.getElementById("3cs106").value;
+      var h=document.getElementById("3ec104").value;
+/*
+      var aa= Number(a)*4;
+      var bb=Number(b)*4;
+      var cc=Number(c)*4;
+      var dd=Number(d)*3;
+      var ee=Number(e)*3;
+      var ff=Number(f)*3;
+      var gg=Number(g)*1;
+      var hh=Number(h)*1;
+      */
+
+      if(a>=50 && a<60)
+        aa=6;
+      else if(a>=60 && a<70)
+        aa=7;
+      else if(a>=70 && a<80)
+        aa=8;
+      else if(a>=80 && a<90)
+        aa=9;
+      else if(a>=90 && a<=100)
+        aa=10;
+
+     
+       if(b>=50 && b<60)
+        bb=6;
+      else if(b>=60 && b<70)
+        bb=7;
+      else if(b>=70 && b<80)
+        bb=8;
+      else if(b>=80 && b<90)
+        bb=9;
+      else if(b>=90 && b<=100)
+        bb=10;
+
+
+       if(c>=50 && c<60)
+        cc=6;
+      else if(c>=60 && c<70)
+        cc=7;
+      else if(c>=70 && c<80)
+        cc=8;
+      else if(c>=80 && c<90)
+        cc=9;
+      else if(c>=90 && c<=100)
+        cc=10;
+
+      
+        if(d>=50 && d<60)
+        dd=6;
+      else if(d>=60 && d<70)
+        dd=7;
+      else if(d>=70 && d<80)
+        dd=8;
+      else if(d>=80 && d<90)
+        dd=9;
+      else if(d>=90 && d<=100)
+        dd=10;
+
+
+        if(e>=50 && e<60)
+        ee=6;
+      else if(e>=60 && e<70)
+        ee=7;
+      else if(e>=70 && e<80)
+        ee=8;
+      else if(e>=80 && e<90)
+        ee=9;
+      else if(e>=90 && e<=100)
+        ee=10;
+
+
+       if(f>=50 && f<60)
+        ff=6;
+      else if(f>=60 && f<70)
+        ff=7;
+      else if(f>=70 && f<80)
+        ff=8;
+      else if(f>=80 && f<90)
+        ff=9;
+      else if(f>=90 && f<=100)
+        ff=10;
+
+
+        if(g>=50 && g<60)
+        gg=6;
+      else if(g>=60 && g<70)
+        gg=7;
+      else if(g>=70 && g<80)
+        gg=8;
+      else if(g>=80 && g<90)
+        gg=9;
+      else if(g>=90 && g<=100)
+        gg=10;
+
+
+
+        if(h>=50 && h<60)
+        hh=6;
+      else if(h>=60 && h<70)
+        hh=7;
+      else if(h>=70 && h<80)
+        hh=8;
+      else if(h>=80 && h<90)
+        hh=9;
+      else if(h>=90 && h<=100)
+        hh=10;
+
+      
+
+      var aaa= Number(aa)*4;
+      var bbb=Number(bb)*4;
+      var ccc=Number(cc)*4;
+      var ddd=Number(dd)*3;
+      var eee=Number(ee)*3;
+      var fff=Number(ff)*3;
+      var ggg=Number(gg)*1;
+      var hhh=Number(hh)*1;
+
+
+      var total=(aaa+bbb+ccc+ddd+eee+fff+ggg+hhh);
+
+      
+
+
+
+      document.getElementById("result").innerHTML = total/23;
+  //document.getElementById("result").innerHTML = Number(x)+Number(y);
+ // document.getElementById("demo").innerHTML="hello world"
+}
+  function myTotal() {
+      var a=document.getElementById("3cs103").value;
+      var b=document.getElementById("3cs105").value;
+           var c=document.getElementById("3ec103").value;
+      var d =document.getElementById("3ph103").value;
+           var e=document.getElementById("3ma106").value;
+      var f=document.getElementById("3ch105").value;
+           var g=document.getElementById("3cs106").value;
+      var h=document.getElementById("3ec104").value;
+
+       document.getElementById("total").innerHTML = Number(a)+Number(b)+Number(c)+Number(d)+Number(e)+Number(f)+Number(g)+Number(h);
+
+}
+
+function myPercentage()
+{
+     var a=document.getElementById("3cs103").value;
+      var b=document.getElementById("3cs105").value;
+           var c=document.getElementById("3ec103").value;
+      var d =document.getElementById("3ph103").value;
+           var e=document.getElementById("3ma106").value;
+      var f=document.getElementById("3ch105").value;
+           var g=document.getElementById("3cs106").value;
+      var h=document.getElementById("3ec104").value;
+
+
+      var total=Number(a)+Number(b)+Number(c)+Number(d)+Number(e)+Number(f)+Number(g)+Number(h);
+
+       var perc =total/8;
+
+
+        document.getElementById("percentage").innerHTML = Number(perc);
+}
+</script>
+</body>
+</html>
